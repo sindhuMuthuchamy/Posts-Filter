@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #ddd;
+        }
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            background: silver;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .search {
+            margin-bottom: 20px;
+        }
+        #search-input{
+            padding: 0.5rem;
+            border: solid 1px rgb(15,15,27);
+            border-radius: 10px;
+        }
+        #search-input:focus{
+            outline: none;
+        }
+        .post {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .title {
+            font-weight: bold;
+        }
+        .body {
+            margin-top: 5px;
+        }
+        button{
+            margin-top: 1rem;
+        }
+        .post{
+            background-color: #ddd;
+            padding: 10px;
+            color: rgb(15,15,27);
+            text-align: left;
+        }
+        .title{
+            color:  rgb(15,15,27);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Post Filter</h1>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Search by title..."><br>
+            <button onclick="filterPosts()">Search</button>
+        </div>
+        <div id="post-list"></div>
+    </div>
+
+    <div class="result">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
